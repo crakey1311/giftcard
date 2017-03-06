@@ -1,10 +1,242 @@
-.X00Container {
-  border: 1px solid #033f47;
-  border-radius: 5px;
-  margin: 20px auto;
-  overflow: hidden;
-  width: 790px;
-  -moz-box-shadow: 0px 0px 5px rgba(4, 47, 53, 0.83);
-  -webkit-box-shadow: 0px 0px 5px rgba(4, 47, 53, 0.83);
-  box-shadow: 0px 0px 25px rgba(4, 47, 53, 0.83);
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
+
+body{
+	background: #fff ;
+	font-family: 'Helvetica', arial, sans-serif;
+
+	font-size: 15px;
+}
+
+p{
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+h3{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #aaa;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #666;
+}
+
+
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background:  #fff ;
+	overflow: hidden;
+	padding: 10px;
+}
+
+
+.header{
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px 10px 0 10px;
+	background: #3154b4 ;
+	color: #fff;
+}
+
+/* Main */
+
+	.middle{
+		width: 500px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 0 10px 10px 10px;
+		float: left;
+	}
+.middle img{
+			max-width:50%;
+			height: auto;
+text-align:center;
+		}
+
+
+		.middle a{
+			font-weight: bold;
+		}
+
+	.right{
+		width: 250px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		background: #fff;
+	}
+
+
+	.right ul{
+		list-style-type: none;
+	}
+	.right ul li{
+		display: block;
+	}
+	.right ul li a{
+		display: block;
+		border-bottom: 1px solid #dedede;
+		margin-bottom: 10px;
+		padding: 10px 5px;
+	}
+	.right ul li a:hover{
+		color: orange;
+	}
+
+.footer{
+	clear: both;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+.fb_pic {
+width:48px;
+height:48px
+}
+
+.fb_meta {
+color:#90949c;
+font-size:12px;
+line-height:1.358
+}
+
+.fb_meta a {
+color:#4267b2
+}
+
+.fb_comment {
+color:#1d2129;
+margin:4px 0;
+font-size:14px;
+line-height:19.012px
+}
+
+.fb_comment_wrapper {
+font-family:helvetica,arial,sans-serif;
+margin-bottom:15px
+}
+
+.fb_name {
+color:#365899;
+cursor:pointer;
+text-decoration:none;
+font-weight:700;
+font-size:14px
+}
+
+.fb_image_block {
+float:left;
+margin-right:10px
+}
+
+.fb_image {
+height:48px
+}
+
+.fb_comment_block {
+margin-left:55px
+}
+
+.fb_line {
+margin-bottom:0
+}
+
+.fb_plugin_link {
+color:#365899;
+cursor:pointer;
+text-decoration:none;
+font-size:11px;
+font-family:helvetica,arial,sans-serif
+}
+
+.fb_comments_count_cover {
+font-size:14px;
+font-family:helvetica,arial,sans-serif;
+font-weight:700;
+color:#1d2129;
+background-color:#fff;
+z-index:2;
+padding:5px;
+display:inline-block;
+position:absolute
+}
+
+.fb_comments_container {
+height:120px!important;
+overflow:hidden!important;
+margin:20px
+}
+
+.fb_comment_section {
+padding-left:8px;
+margin:20px
+}
+
+.fb_like_button {
+padding-right:4px;
+margin-top:-5px
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+
+	}
+	.middle {
+		width: 92%;
+		float: right;
+	}
+	
+	.right {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+
+	}
+	
+	.middle {
+		width: auto;
+		float: none;
+	}
+	
+	.right {
+		width: auto;
+		float: none;
+	}
+
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
